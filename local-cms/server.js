@@ -653,9 +653,19 @@ ${data.content}`;
                     }
                 }
 
-                // 3. git push
-                console.log('-> git push');
-                await execPromise('git push');
+                // 3. git push (设置上游分支)
+                console.log('-> git push --set-upstream origin master');
+                try {
+                    await execPromise('git push --set-upstream origin master');
+                } catch (err) {
+                    // 如果已经设置了上游分支，使用普通push
+                    if (err.stdout && err.stdout.includes('already exists')) {
+                        console.log('-> git push (already has upstream)');
+                        await execPromise('git push');
+                    } else {
+                        throw err;
+                    }
+                }
 
                 console.log('✅ 发布成功！');
                 res.writeHead(200, { 'Content-Type': 'application/json' });
