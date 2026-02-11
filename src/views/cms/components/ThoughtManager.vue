@@ -77,7 +77,7 @@ const recentAdditions = computed(() => {
           </div>
           <div class="cms-thought-content-col">
             <div class="cms-thought-meta">
-              <span class="cms-thought-nickname">Youth</span>
+              <span class="cms-thought-nickname">YLS</span>
               <span class="cms-thought-date">{{ element.date }} {{ element.week }}</span>
             </div>
             <div class="cms-thought-bubble">

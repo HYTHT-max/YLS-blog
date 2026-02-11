@@ -110,7 +110,7 @@ const filteredTotalPages = computed(() => Math.ceil(filteredThoughts.value.lengt
 
           <div class="content-col">
             <div class="meta-info">
-              <span class="nickname">Youth</span>
+              <span class="nickname">YLS</span>
               <span class="date">{{ item.date }} {{ item.week }}</span>
             </div>
 

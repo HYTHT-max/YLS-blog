@@ -89,7 +89,7 @@ const router = createRouter({
 
 // 全局后置守卫，动态设置标题
 router.afterEach((to) => {
-    const baseTitle = 'Youth Blog'; // 你的博客基础标题
+    const baseTitle = 'YLS Blog'; // 你的博客基础标题
     if (to.meta.title) {
         document.title = `${baseTitle} | ${to.meta.title}`;
     } else {

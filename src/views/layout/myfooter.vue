@@ -63,7 +63,7 @@ onUnmounted(() => {
         千山万水
         </p>
         <p class="copyright">
-          &copy; {{ new Date().getFullYear() }} Youth Finished design by <a href="https://github.com/lxchapu/astro-gyoza">Gyoza</a>.
+          &copy; {{ new Date().getFullYear() }} YLS Finished design by <a href="https://github.com/lxchapu/astro-gyoza">Gyoza</a>.
         </p>
 
       </div>
