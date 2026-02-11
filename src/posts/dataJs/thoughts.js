@@ -3,6 +3,15 @@ export const thoughts = [
         "date": "2026-02-11",
         "likes": 0,
         "comments": 0,
+        "content": "测试3",
+        "id": 1770807556873,
+        "week": "星期三",
+        "_cms_id": "1770807556873-hsn4t87du"
+    },
+    {
+        "date": "2026-02-11",
+        "likes": 0,
+        "comments": 0,
         "content": "测试",
         "id": 1770807422863,
         "week": "星期三",
